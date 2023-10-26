@@ -1,0 +1,140 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/ITunes_12_logo.png/768px-ITunes_12_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Urbano</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        body {
+            background: #131212;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+                li a:hover {
+                    background-color: #111;
+                }
+
+        .active {
+            background-color: #45C903;
+        }
+
+        .logo {
+            width: 45px;
+            text-align: center;
+        }
+
+        .position {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index")">Inicio</a></li>
+                <li><a href="@Url.Action("Pop")">Pop</a></li>
+                <li><a class="active" href="@Url.Action("Urbano")">Urbano</a></li>
+                <li><a href="@Url.Action("ClassicRap")">ClassicRap</a></l>
+            </ul>
+        </nav>
+    </header>
+    <br />
+    <h1>ESCUCHA LO MEJOR DEL URBANO!</h1>
+    <br />
+    <div class="position">
+        <div class="card" style="width: 18rem;">
+            <img height="150" src="https://eonlinethumbs-a.akamaihd.net/images/766/835/ryanblessd_348250_560x315_2118237251661.jpg?fit=around%7C600:337&output-quality=90&crop=600:337;center,top" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/XEdP5DJxY4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img height="150" src="https://st1.uvnimg.com/62/02/6d1270b648ba9c858b161e8fa3c5/blessd-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/FXO40R1_wgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img height="150" src="https://cdn.shopify.com/s/files/1/2460/7967/files/KAROLG-0065_MSB_Drop_3_static_banners__Mobile_500x.png?v=1678717188" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/fEWhm_TVvUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img height="150" src="https://www.billboard.com/wp-content/uploads/2022/06/ryan-castro-premios-heat-press-photo-2022-billboard-1548.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/wqwDbEwtSCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="position">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/736x/f0/cd/eb/f0cdeb1d2fc6b03462b5984ce99a53ca.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/qgdQj8JyMXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img height="160" src="https://www.publimetro.com.mx/resizer/os6uru8WKmiKzSMaXSt6PDLNHVo=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/GTNBWJW42JBKRFPVZXKFDZJ6ME.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/GIzM1Q-ePuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img height="160" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/jWIBEyT70-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img height="160" src="https://www.insidesport.in/wp-content/uploads/2023/04/bad-bunny-banner.webp?w=809" class="card-img-top" alt="...">
+            <div class="card-body">
+                <iframe width="249" height="200" src="https://www.youtube.com/embed/UdGMRQg5szM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

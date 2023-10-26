@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MusicStore</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/ITunes_12_logo.png/768px-ITunes_12_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        body {
+            background: #131212;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+                li a:hover {
+                    background-color: #111;
+                }
+
+        .active {
+            background-color: #45C903;
+        }
+
+        .logo {
+            width: 45px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="@Url.Action("Index")">Inicio</a></li>
+                <li><a href="@Url.Action("Pop")">Pop</a></li>
+                <li><a href="@Url.Action("Urbano")">Urbano</a></li>
+                <li><a href="@Url.Action("ClassicRap")">ClassicRap</a></l>
+            </ul>
+        </nav>
+    </header>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.ibb.co/TPQXWM7/music-live-fu8kha60kamy-large.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cnnespanol.cnn.com/wp-content/uploads/2022/03/Foto_blessd_tendencia.jpg?quality=100&strip=info" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.iamrap.es/asset/thumbnail,992,558,center,center/media/iamrap/images/2023/01/16/2023011619555062294.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br />
+    <h1>conoce Y explora todo de la música!</h1>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cnnespanol.cnn.com/wp-content/uploads/2022/02/220207145752-billie-eilish-full-169.jpg?quality=100&strip=info" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://files.lamega.com.rcnra-dev.com/assets/public/media/image/image/2022-10/Blessd%20en%20megaland.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2022/02/14/dr-dre-y-snoop-dogg.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
